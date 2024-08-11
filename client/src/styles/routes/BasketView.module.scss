@@ -1,0 +1,19 @@
+@import "@/styles/breakpoints";
+
+.price {
+    text-align: right;
+}
+
+.mobileCheckout {
+    display: none;
+}
+
+@include breakpoint(large) {
+    .price {
+        text-align: left;
+    }
+    
+    .mobileCheckout {
+        display: block;
+    }
+}

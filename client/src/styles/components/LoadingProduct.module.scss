@@ -1,0 +1,42 @@
+@import "@/styles/variables";
+@import "@/styles/animations";
+
+$shimmerColour: $mainBackground;
+$maxWidth: 250px;
+
+.product {
+    border: $borderThickness solid darken($shimmerColour, 5);
+    background-color: $white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 250px;
+    
+    .heading {
+        flex: 1;
+        min-height: 20px;
+        width: 150px;
+        margin-bottom: 10px;
+    }
+    
+    .price {
+        height: 20px;
+        width: 50px;
+    }
+    
+    .button {
+        box-sizing: border-box;
+        height: 47px;
+        width: 85px;
+    }
+
+    .shimmer {
+        @include ShimmerAnimation($shimmerColour, $maxWidth, 3s);
+    }
+}

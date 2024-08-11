@@ -1,0 +1,119 @@
+@import "@/styles/variables";
+@import "@/styles/mixins";
+@import "@/styles/breakpoints";
+
+.navContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+    .burger {
+        display: none;
+        justify-content: center;
+    }
+    
+    .cart {
+        width: 40px;
+        height: 40px;
+        margin-left: 15px;
+    }
+    
+    .nav {
+        display: flex;
+        flex-direction: row-reverse;
+        overflow: hidden;
+        z-index: 2;
+        
+        nav {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 15px;
+            margin-left: 15px;
+            
+            a {
+                font-size: 1.125em;
+                font-weight: bold;
+                transition: background-color $transitionSpeed linear, color $transitionSpeed linear;
+                
+                &:hover {
+                    color: $blue;
+                }
+                
+                &:global(.active) {
+                    color: $blue;
+                }
+            }
+        }
+    } 
+}
+
+/**
+ * Breakpoints
+ */
+
+@include breakpoint(large) {
+    .navContainer {
+        .burger {
+            display: flex;
+        }
+        
+        .nav {
+            @include bordered;
+            flex-direction: column;
+            gap: 15px;
+            transition: right var(--duration) ease-in;
+            width: 500px;
+
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #fff;
+            
+            position: absolute;
+            top: calc(100px - $borderThickness);
+            right: -600px;
+
+            &.open {
+                right: 0;
+            }
+            
+            &.hidden {
+                display: none;
+            }
+            
+            nav {
+                flex-direction: column;
+                align-items: initial;
+
+                margin-left: 0;
+                
+                a {
+                    padding: 10px;
+
+                    &:hover {
+                        color: $white;
+                        background-color: $blue;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include breakpoint(medium) {
+    .navContainer {
+        .nav {
+            width: 400px;
+            right: -500px;
+        }
+    }
+}
+
+@include breakpoint(small) {
+    .navContainer {
+        .nav {
+            width: 200px;
+            right: -300px;
+        }
+    }
+}

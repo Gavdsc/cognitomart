@@ -1,0 +1,45 @@
+@import "@/styles/variables";
+@import "@/styles/breakpoints";
+
+.page {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    background-color: $white;
+    
+    .breadCrumb {
+        grid-column: span 2;
+    }
+    
+    .imageContainer {        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        
+        img { 
+            width: 100%;
+            
+            // Just a holding value as no images
+            opacity: .4;
+        }
+    }
+    
+    .productDetails {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@include breakpoint(medium) {
+    .page {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+
+        .breadCrumb {
+            grid-column: span 1;
+        }
+    }
+}

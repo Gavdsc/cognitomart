@@ -1,0 +1,17 @@
+@import "@/styles/variables";
+
+.header {
+    display: flex;
+    padding: 0 15px;
+    justify-content: space-between;
+    gap: 15px;
+    background-color: $headerBackground;
+    border-bottom: $borderThickness solid $borders;
+    box-sizing: border-box;
+
+    // Overwrite NavLink a rendering.
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}

@@ -1,0 +1,32 @@
+@import "@/styles/variables";
+@import "@/styles/breakpoints";
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+    gap: 20px;
+    
+    .product {
+        background-color: white;
+        padding: 20px;
+        box-sizing: border-box;      
+        
+        // Wrapped in a NavLink
+        a {
+            text-decoration: none;
+            
+            // Ensure extra space is used by title to keep button on the bottom of the container
+            flex: 1;
+
+            h4 {
+                margin: 0;
+            }
+        }
+    }
+}
+
+@include breakpoint(large) {
+    .container {
+        grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
+    } 
+}

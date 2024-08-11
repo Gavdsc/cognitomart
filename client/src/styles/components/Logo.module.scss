@@ -1,0 +1,70 @@
+@import "@/styles/breakpoints";
+
+.logo {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+    img {
+        height: 100%;
+    }
+
+    .textBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h3 {
+            font-size: 2em;
+            margin: 0;
+        }
+        span {
+            display: block;
+            font-size: 1.1em;
+        }
+    }
+}
+
+@include breakpoint(large) {
+    .logo {
+        img {
+            // Adjust with a fixed width due to firefox div sizing quirk. 
+            width: 120px;
+        }
+        
+        .textBox {
+            h3 {
+                font-size: 1.6em;
+            }
+            
+            span {
+                font-size: 1em;
+            }
+        }
+    }
+}
+
+@include breakpoint(small) {
+    .logo {
+        flex-direction: column;
+        gap: 0;
+        
+        img {
+            // Adjust with a fixed width due to firefox div sizing quirk. 
+            width: 80px;
+        }
+        
+        .textBox {
+            h3 {
+                font-size: 1.25em;
+            }
+            
+            span {
+                font-size: .8em;    
+                display: none;
+            }
+        }
+    }
+}

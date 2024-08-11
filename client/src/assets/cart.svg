@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="700.43402"
+   height="700.00201"
+   viewBox="0 0 42.026041 42.000121"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="cart.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.0438664"
+     inkscape:cx="390.37563"
+     inkscape:cy="392.29159"
+     inkscape:window-width="2560"
+     inkscape:window-height="1377"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <title
+     id="title1">cart-shopping</title>
+  <g
+     id="g2"
+     transform="translate(-2.674853,-2.1870079)">
+    <path
+       d="m 37.39824,38.241857 c 0,1.908551 -2.307352,2.86401 -3.656737,1.514625 -1.349385,-1.349386 -0.393926,-3.656737 1.514625,-3.656737 1.183055,0 2.142112,0.959057 2.142112,2.142112 z"
+       style="fill:#ffffff;fill-opacity:1;stroke-width:1.07106"
+       id="path1-4" />
+    <path
+       d="m 15.17645,38.186616 c 0,1.908551 -2.307352,2.86401 -3.656737,1.514625 -1.349385,-1.349386 -0.393926,-3.656737 1.514625,-3.656737 1.183055,0 2.142112,0.959057 2.142112,2.142112 z"
+       style="fill:#ffffff;fill-opacity:1;stroke-width:1.07106"
+       id="path1-4-3" />
+    <g
+       id="g1"
+       transform="translate(-0.3251479,-0.81287078)">
+      <path
+         d="M 38.658109,27.336376 H 13.406712 l -1.62258,-14.487722 h 29.206436 z"
+         id="path1-1"
+         style="fill:#1a96f3;fill-opacity:1;stroke-width:1.02442" />
+      <g
+         id="icons_Q2"
+         data-name="icons Q2">
+        <path
+           d="M 44.3,10 C 43.694811,9.3769715 42.868393,9.0176596 42,9 H 11.5 L 11.1,5.6 C 10.898394,4.1009988 9.6124376,2.9865034 8.1,3 H 5 C 2.3333345,3 2.3333345,7 5,7 h 2.2 l 3.2,26.9 c -1.8032852,1.064842 -2.9069664,3.005799 -2.9,5.1 0,3.313708 2.686292,6 6,6 2.540045,-0.03968 4.798894,-1.624835 5.7,-4 h 10.6 c 0.901106,2.375165 3.159955,3.960322 5.7,4 3.313711,0 5.999997,-2.686292 5.999997,-6 0,-3.313708 -2.686286,-6 -5.999997,-6 -2.540045,0.03968 -4.798894,1.624835 -5.7,4 H 19.2 C 18.428485,34.883096 16.536038,33.376862 14.3,33.1 L 14.1,31 h 25.3 c 1.474331,-0.03605 2.703804,-1.138337 2.9,-2.6 L 45,12.6 C 45.111759,11.675415 44.860858,10.743496 44.3,10 Z m -6.8,29 c 0,1.781934 -2.154277,2.674006 -3.414142,1.414142 C 32.825994,39.154277 33.718066,37 35.5,37 c 1.104569,0 2,0.895431 2,2 z m -22,0 c 0,1.781934 -2.154277,2.674006 -3.414142,1.414142 C 10.825994,39.154277 11.718066,37 13.5,37 c 1.104569,0 2,0.895431 2,2 z m 23,-12 H 13.6 L 12,13 h 28.8 z"
+           id="path1"
+           sodipodi:nodetypes="cccccsscccccccscccccccccssssssssccccc"
+           style="fill:#333333;fill-opacity:1" />
+      </g>
+    </g>
+  </g>
+  <metadata
+     id="metadata2">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>cart-shopping</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

@@ -1,0 +1,17 @@
+$breakpoints: (
+    "small": 576px,
+    "medium": 768px,
+    "large": 992px
+);
+
+@mixin breakpoint($breakpoint) {
+    $size: map-get($breakpoints, $breakpoint);
+
+    @if $size != null {
+        @media (max-width: $size) {
+            @content;
+        }
+    } @else {
+        @warn "Breakpoint #{$breakpoint} not declared in map.";
+    }
+} 

@@ -1,0 +1,59 @@
+@import "@/styles/variables";
+
+$width: 32px;
+$thickness: 4px;
+$transformOrigin: 1px;
+$gap: 6.5px;
+
+.burger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+    width: $width;
+    height: $width;
+    
+    // Remove button styling
+    border: 0;
+    background-color: $white;
+    
+    > div {
+        width: $width;
+        height: $thickness;
+        background: $black;
+        transition: transform $transitionSpeed linear, opacity $transitionSpeed linear;
+        
+        
+        transform-origin: $transformOrigin;
+
+        &:first-child {
+            transform: rotate(0);
+        }
+
+        &:nth-child(2) {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        &:nth-child(3) {
+            transform: rotate(0);
+        }
+    }
+
+    &.open {
+        > div {
+            &:first-child {
+                transform: rotate(45deg);
+            }
+
+            &:nth-child(2) {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+
+            &:nth-child(3) {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}

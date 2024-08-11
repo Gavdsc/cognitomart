@@ -1,0 +1,14 @@
+@import "@/styles/variables";
+@import "@/styles/mixins";
+
+.footer {
+    background-color: $blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: $borderThickness solid $borders;
+
+    img {
+        height: 75px;
+    }
+}

@@ -1,0 +1,122 @@
+@import "variables";
+@import "mixins";
+@import "breakpoints";
+
+.mainWrapper {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 100px 1fr 100px;
+
+    .main {
+        background-color: $mainBackground;
+    }
+    
+    .notFoundContainer {
+        margin: 20px;
+    }
+}
+
+/*
+ * Global styles
+ */
+
+h1 {
+    font-size: 1.75em;
+    margin: 0;
+}
+
+h4 {
+    font-size: 1.125em;
+}
+
+p, span, a {
+    font-size: 1em;
+}
+
+:global(.borderedContainer) {
+    @include bordered;
+    background-color: $white;
+    padding: 20px;
+}
+
+// Layout card items vertically. Add (flex: 1) to element you want to fill remaining space.
+:global(.flexCardLayout) {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+}
+
+:global(.quantityInputContainer) {
+    button {
+        padding: 10px;
+        width: auto;
+    }
+    
+    input {
+        @include bordered;
+        font-size: 1em;
+        padding: 10px;
+        max-width: 25px;
+        border-left: 0;
+        border-right: 0;
+        text-align: center;
+        outline: none;
+    }
+}
+
+:global(.button), :global(.quantityButton) {
+    @include bordered;
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+
+    color: $white;
+    background-color: $blue;
+
+    transition: background-color $transitionSpeed linear;
+
+    &:hover {
+        background-color: lighten($blue, 10);
+    }
+}
+
+// Accessibility
+:global(.screenReader) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+@include breakpoint(large) {
+    .mainWrapper {
+        // Hidden overflow for mobile menu.
+        overflow-x: hidden;
+    }
+}
+
+@include breakpoint(medium) {
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    h4 {
+        font-size: 1em;
+    }
+}
+
+@include breakpoint(small) {
+    h1 {
+        font-size: 1.25em;
+    }
+}

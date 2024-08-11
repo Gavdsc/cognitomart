@@ -1,0 +1,5 @@
+@import "variables";
+
+@mixin bordered {
+    border: $borderThickness solid $borders;
+}
