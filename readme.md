@@ -4,6 +4,8 @@
 
 This is a Cognito Education technical assessment submission by Gav de Ste Croix.
 
+Thank you for the opportunity to take part!
+
 [Style guide](./client/src/styles/StyleGuide.md) for global styles.
 
 ![CognitoMart Screenshot](./cognitoMart.png)
